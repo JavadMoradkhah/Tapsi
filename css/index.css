@@ -105,3 +105,10 @@ a {
 .flex--aic {
   align-items: center;
 }
+
+/* Container */
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
