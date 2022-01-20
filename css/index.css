@@ -1,0 +1,86 @@
+/* Variables */
+:root {
+  --color-primary: #ff5722;
+  --color-secondary: #0065dc;
+  --color-text-default: #000;
+  --color-text-navigation-items: #545454;
+  --color-text-description: #333;
+  --color-text-link: #0065dc;
+  --color-text-post-title: #9b9b9b;
+  --color-text-copyright: #acacac;
+  --color-bg-footer: #000;
+}
+
+/* Basic Styles */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+@font-face {
+  font-family: "iran-yekan-regular";
+  src: url("/assets/font/IRANYekanWebRegular.eot");
+  src: url("/assets/font/IRANYekanWebRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/font/IRANYekanWebRegular.woff2") format("woff2"),
+    url("/assets/font/IRANYekanWebRegular.woff") format("woff"),
+    url("/assets/font/IRANYekanWebRegular.ttf") format("truetype"),
+    url("/assets/font/IRANYekanWebRegular.svg#IRANYekanWeb") format("svg");
+}
+/* 
+Font Usage
+font-family: "iran-yekan-regular", Arial, Helvetica, sans-serif;
+*/
+
+html {
+  /* 62.5% of 16px => 10px */
+  font-size: 62.5%;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "iran-yekan-regular", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p,
+a,
+button {
+  font-size: 1.6rem;
+  font-family: "iran-yekan-regular", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.5;
+}
+
+/* Links */
+a {
+  color: var(--color-text-link);
+}
