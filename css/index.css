@@ -84,3 +84,24 @@ p {
 a {
   color: var(--color-text-link);
 }
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+
+.flex--col {
+  flex-direction: column;
+}
+
+.flex--jcc {
+  justify-content: center;
+}
+
+.flex--jc-se {
+  justify-content: space-evenly;
+}
+
+.flex--aic {
+  align-items: center;
+}
