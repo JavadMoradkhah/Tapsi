@@ -899,3 +899,108 @@ ul {
     padding-left: 14%;
   }
 }
+
+/* Parallax Block */
+.parallax-block {
+  width: 100%;
+  position: relative;
+  background-image: url("/assets/image/khwaeng_khlong_toei_nuea_640w.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 768px) {
+  .parallax-block {
+    background-image: url("/assets/image/khwaeng_khlong_toei_nuea_1280w.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .parallax-block {
+    background-image: url("/assets/image/khwaeng_khlong_toei_nuea_1280w.jpg");
+  }
+}
+
+.parallax-block::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 11, 40, 0.6);
+  backdrop-filter: blur(1px);
+}
+
+.parallax-block__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.parallax-block__wrapper .divider {
+  width: 2px;
+  height: 50px;
+  display: none;
+  background-color: #fff;
+}
+
+.parallax-block__box {
+  padding: 2rem 4rem;
+}
+
+.parallax-block__box:hover .parallax-block__box-description {
+  display: block;
+}
+
+.parallax-block__box-title,
+.parallax-block__box-description {
+  color: #fff;
+  text-align: center;
+}
+
+.parallax-block__box-title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.75;
+}
+
+.parallax-block__box-description {
+  display: none;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .parallax-block__wrapper {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax-block__wrapper .divider {
+    display: block;
+  }
+
+  .parallax-block__box {
+    width: 25%;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .parallax-block__wrapper {
+    padding: 0 8%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .parallax-block__wrapper {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
