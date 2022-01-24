@@ -1171,3 +1171,43 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Cities Block */
+.cities-block {
+  display: none;
+  background-color: #f8f8f9;
+  background: url("/assets/image/map-back.svg") no-repeat;
+}
+
+.cities-block__list {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.city {
+  padding: 2rem;
+}
+
+.city__name,
+.city__english-name {
+  font-weight: lighter;
+}
+
+.city__name {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.city__english-name {
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .cities-block {
+    display: block;
+  }
+}
