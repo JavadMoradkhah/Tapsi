@@ -1110,3 +1110,64 @@ ul {
     width: initial;
   }
 }
+
+/* Posts Block */
+.posts-block .grid {
+  margin-top: 3rem;
+  row-gap: 2rem;
+}
+
+.post {
+  border-radius: 1.2rem;
+}
+
+.post:hover {
+  box-shadow: 0 0 16px 10px rgba(172, 172, 172, 0.3);
+}
+
+.post__link {
+  display: block;
+  padding: 2rem;
+}
+
+.post__image {
+  border-radius: 1.2rem;
+}
+
+.post__title {
+  margin: 1rem 0 1.5rem;
+  color: #9b9b9b;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.post__description {
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+
+@media screen and (min-width: 768px) {
+  .posts-block .grid {
+    gap: 0 1rem;
+  }
+
+  .posts-block .grid--1x3 {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .posts-block .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
